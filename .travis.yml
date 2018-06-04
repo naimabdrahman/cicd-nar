@@ -1,4 +1,4 @@
-language: bash
+language: generic
 
 sudo: required
 
@@ -8,3 +8,4 @@ services:
 before_install:
   - docker build -t flaskblog:latest .
   - docker run -dit -p 80:80 flaskblog:latest
+
